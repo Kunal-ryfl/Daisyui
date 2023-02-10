@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
     </form>
     { theme=='dark'?
                 <button className=' md:hidden  px-2 py-2 rounded text-gray-400 text-2xl  ' onClick={handleThemeSwitch}><MdOutlineWbSunny/></button>:
-                <button className='  px-2 py-2 rounded text-gray-400 text-2xl  ' onClick={handleThemeSwitch}><MdOutlineNightlight/></button>
+                <button className=' md:hidden px-2 py-2 rounded text-gray-400 text-2xl  ' onClick={handleThemeSwitch}><MdOutlineNightlight/></button>
        }
       </div>
       <div className="flex-none hidden lg:block">
