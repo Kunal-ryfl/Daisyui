@@ -63,13 +63,16 @@ export default function RootLayout({ children }) {
       </div> 
       <div className="flex-1 px-2 mx-2 justify-between"> <Link href={'/'}> <FcStumbleupon className=' text-5xl md:3xl'/></Link> 
       
+      <div className=' flex ml-2'>
+
       <form onSubmit={handleSubmit} >
  <input  type="text" onChange={(e)=>{setRoute(e.target.value)}} id='search' placeholder="search for products"   className="input bg-gray-100 border-2  dark:bg-base-100 input-bordered w-48  md:w-72" />
     </form>
     { theme=='dark'?
                 <button className=' md:hidden  px-2 py-2 rounded text-gray-400 text-2xl  ' onClick={handleThemeSwitch}><MdOutlineWbSunny/></button>:
                 <button className=' md:hidden px-2 py-2 rounded text-gray-400 text-2xl  ' onClick={handleThemeSwitch}><MdOutlineNightlight/></button>
-       }
+              }
+              </div>
       </div>
       <div className="flex-none hidden lg:block">
         <ul className="menu menu-horizontal">
