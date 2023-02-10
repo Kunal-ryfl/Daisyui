@@ -19,7 +19,7 @@ export default async function page() {
 return (
   <>
   <div className=' text-black px-2 py-5 dark:text-white'>
-  <Time/>
+  {/* <Time/> */}
     <div className='flex flex-wrap justify-center'>
  {
   pro.map((product)=>(
